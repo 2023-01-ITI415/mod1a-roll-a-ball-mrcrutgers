@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private float movementX;
     private float movementY;
+
+    public float speed = 0;
     
 
     // Start is called before the first frame update
@@ -30,6 +32,6 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
-        rb.AddForce(movement);
+        rb.AddForce(movement * speed);
     }
 }
