@@ -127,3 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d68d8902b35144f9af721112200412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  countText: {fileID: 0}
+  winTextObject: {fileID: 0}

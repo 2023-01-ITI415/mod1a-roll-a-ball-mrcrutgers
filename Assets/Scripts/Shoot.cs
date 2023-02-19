@@ -24,14 +24,14 @@ public class Shoot : MonoBehaviour
 
         //Shoot the Bullet in the forward direction of the player
 
-
-        //projectile.velocity = transform.TransformDirection( Vector3 ( 0, 0, shootSpeed) );
+        projectile.velocity = transform.forward * shootSpeed;
+        //transform.TransformDirection( Vector3 ( 0, 0, shootSpeed) );
         //transform.forward * shootSpeed;
     }
 }
 
 
-var force: float;
+//var force: float;
 
 //or should i do it like this?
 
