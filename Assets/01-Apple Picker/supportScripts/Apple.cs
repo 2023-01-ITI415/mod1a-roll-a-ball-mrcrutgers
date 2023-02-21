@@ -25,24 +25,24 @@ public class Apple : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         count = 0;
 
-        SetCountText();
-        winTextObject.SetActive(false);
+        // SetCountText();
+        // winTextObject.SetActive(false);
 
-        countText.text = "Score: "+ count;
+        // countText.text = "Score: "+ count;
         
     }
 
    
-    void SetCountText()
-    {
-        countText.text = "Count: " + count.ToString();
-        if(count >= 12)
-        {
-            winTextObject.SetActive(true);
+    // void SetCountText()
+    // {
+    //     countText.text = "Count: " + count.ToString();
+    //     if(count >= 12)
+    //     {
+    //         winTextObject.SetActive(true);
 
-        }
+    //     }
 
-    }
+    // }
 
 
     private void OnTriggerEnter(Collider other)
@@ -52,7 +52,7 @@ public class Apple : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
 
-            SetCountText();
+            //SetCountText();
         }
 
     }

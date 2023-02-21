@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     
-// Hint: By making the prefab field Rigidbody you later can skip GetComponent
+
     public Rigidbody applePrefab;
     public float shootSpeed = 300;
 
