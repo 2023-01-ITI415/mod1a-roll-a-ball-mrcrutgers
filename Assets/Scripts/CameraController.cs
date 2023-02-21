@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class CameraController : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         offset = transform.position - player.transform.position;
+
+
         
     }
 
@@ -19,4 +23,14 @@ public class CameraController : MonoBehaviour
     {
         transform.position = player.transform.position + offset;
     }
+
+
 }
+
+
+
+
+
+
+
+    
